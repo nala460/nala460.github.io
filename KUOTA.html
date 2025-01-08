@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELAMAT</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif;
+            background: repeating-linear-gradient(45deg, pink, yellow 10%, lightblue 20%);
+            color: purple;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background: lime;
+            padding: 2rem;
+            border-bottom: 5px dotted red;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            animation: spin 5s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: orange;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-bottom: 3px solid purple;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        nav a:hover {
+            transform: scale(1.5) rotate(15deg);
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: url('https://placekitten.com/800/400') center/cover no-repeat;
+            color: white;
+            padding: 5rem 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 20px black;
+            text-shadow: 2px 2px purple;
+        }
+
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .centered-image img {
+            max-width: 50%; /* Mengatur ukuran maksimal gambar menjadi 50% dari lebar layar */
+            height: auto; /* Menjaga aspek rasio gambar */
+            border: 5px solid purple;
+            border-radius: 10px;
+            box-shadow: 0 0 20px gray;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            border: 5px dashed pink;
+            border-radius: 15px;
+            box-shadow: 0 0 10px yellow;
+            width: 200px;
+            text-align: center;
+            padding: 1rem;
+            transform: skew(10deg);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: skew(-10deg) rotate(5deg);
+        }
+
+        .card h3 {
+            color: red;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: green;
+        }
+
+        footer {
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 1rem;
+            border-top: 5px double yellow;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WADASIGMMA</h1>
+    </header>
+
+    <nav>
+        <a href="#">Rumah</a>
+        <a href="#">Tentang</a>
+        <a href="#">Layanan</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Terimakasih telah berkunjung</h2>
+            <p>semoga harimu lebih bahagia</p>
+        </section>
+
+        <!-- Bagian Foto -->
+        <section class="centered-image">
+            <img src="PPP.jpeg" alt="#" />
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3><a href="https://www.instagram.com/nala.alf/">nala.alf</a></h3>
+                <p>Jangan lupa follow</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.instagram.com/thirza.depin/">thirza.depin</a></h3>
+                <p>Jangan lupa follow</p>
+            </div>
+            <div class="card">
+                <h3><a href="https://www.instagram.com/aprilianrichiee/">aprilianrichiee</a></h3>
+                <p>Jangan lupa follow</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;orang baik</p>
+    </footer>
+</body>
+</html>
